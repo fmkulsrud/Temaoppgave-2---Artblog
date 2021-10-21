@@ -186,12 +186,11 @@ header nav ul {
 }
 
 .button {
-    background-color: white;
+    background-color:#f6f6f6;
     border-width: 0px;
-    padding: 15px 32px;
+    padding: 10px 32px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 5px 5px 10px black;
     font-family: 'open sans', sans-serif;
     font-size: 20px;
     color: #000000;
