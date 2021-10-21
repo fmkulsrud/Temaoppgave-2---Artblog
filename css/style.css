@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+header {
+    display: flex;
+    background-color: #000;
+    color: #FFFF;
+    padding: 30px 20px 30px 20px;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: 30%;
+    margin-top: 50px;
+    line-height: 52.5px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+@media screen and (max-width: 480px) {
+     p {
+        padding: 10px;
+     }
+}
+
+
+body {
+    background-color:#000;
+    color: white;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Abril Fatface'
+}
+
+header nav {
+    flex-grow: 3;
+    display: flex;
+    justify-content: end;
+}
+
+main {
+    margin: 2px 0;
+}
+
+.icon-container {
+    text-align:center; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    gap: 40px;
+}
+
+.text {
+    color:black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.paragraph-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.circle1 {
+    height: 58px;
+    width: 58px;
+    background-color:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .circle2 {
+    height: 58px;
+    width: 58px;
+    background-color:lightslategray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .circle3 {
+    height: 58px;
+    width: 58px;
+    background-color:black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .circle1:hover {
+    background-color: lightslategray;
+  }
+
+  .circle2:hover {
+      background-color: black;
+  }
+
+  .circle3:hover {
+    background-color: lightslategray;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 450px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    header nav ul {
+        max-width: 250px; 
+    }
+}
+  
+  header nav ul li {
+    text-align: right;
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  
+  header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 480px) {
+    header nav ul li {
+        font-size: 14px; 
+        padding: 2px;
+    }
+}
+
+.button {
+    background-color: white;
+    border-width: 0px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 10px black;
+    font-family: 'open sans', sans-serif;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color:#D4AF37;
+    color: white;
+    font-weight: bold;
+}
+            
+
+.card {
+    width: 100%;
+    margin: 50px auto;
+    max-width: 1000px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 50px auto; 
+    }
+}
+
+.card-image {
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .card .card-image {
+        width: 100%;
+        height: auto;
+        flex-flow: column-reverse;
+        padding: 20px;
+    }
+
+    .card .card-image img {
+        width: 100%;
+    }
+}
+
+.card-content {
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .card-content {
+        margin: 20px auto;
+        width: 100%;
+        height: auto;
+        flex-flow: column-reverse;
+    }
+}
+
+.image-responsive {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+}
+
+@media  screen and (max-width: 480px) {
+    .image-responsive {
+        max-width: 414px;
+        height: 300px
+    }
+}
+    
+
+.card-reverse {
+    flex-flow: row-reverse nowrap;
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        flex-flow: column-reverse wrap;
+    }
+}
+
+footer {
+    display: block;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: #000000;
+}
+
+.footer-container {
+    width: 100%;
+    margin: auto;
+    padding: 30px 20px;
+    max-width: 1300x;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: 'Open Sans', sans-serif;
+    gap: 200px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-container {
+        gap: 20px;
+    }
+}
+
+.footer-image {
+    justify-items: flex-start;
+    flex-grow: 3;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-image {
+        flex-grow: 2;
+    }
+
+    .footer-image img {
+        width: 100%;
+    }
+}
+
+.footer-content {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    flex-grow: 1;
+    margin-top: 40px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-content {
+        margin-top: 50px;
+        flex-grow: 2;
+    }
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+footer span {
+    display: block;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+footer nav {
+    flex-grow: 1;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+footer nav ul li {
+    font-size: 16px;
+}
+
+
+/* secondpage elementer */
+
+.cover {
+    width: 100%;
+    height: 350px;
+    background-image: url('../assets/Photo/Cover-steve-johnson-blog.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.mainarticle {
+    background-color: #f6f6f6;
+    margin: 0 0 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    transform: translateY(-40px);
+}
+
+@media screen and (max-width: 1000px){
+    .mainarticle {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mainarticle {
+        max-width: fit-content;
+    }
+}
+
+.header1-darkmode {
+    color: black;
+}
+
+.blogstyle-text-light-author {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: 600;
+}
+
+.publishing-date {
+    font-size: 18px;
+    color: black;
+    text-align: center; 
+}
+
+.art-info {
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+    padding: 0 380px;
+}
+
+@media screen and (max-width: 1100px){
+    .art-info {
+        padding: 0 120px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .art-info {
+        padding: 0 30px 0 30px;
+    }
+}
+
+.blogstyle-text-light {
+    color: black;
+    font-size: 20px;
+    width: 100%;
+    text-align: justify;
+    padding: 0 380px 0 380px;
+}
+
+@media screen and (max-width: 1000px) {
+    .blogstyle-text-light {
+        padding: 0 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .blogstyle-text-light {
+        padding: 0 30px 0 30px;
+    }
+}
+
+.blog-card {
+    width: 100%;
+    margin: 50px auto;
+    max-width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.blog-card img {
+    margin-bottom: 20px;
+}
+
+@media  screen and (max-width: 480px) {
+    .blog-card {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        flex-flow: column-reverse;
+        padding: 20px;
+    }
+}
+
+.image-responsive {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+}
+
+@media  screen and (max-width: 480px) {
+    .image-responsive {
+        max-width: 414px;
+        height: 300px
+    }
+}
+
+
+
+
