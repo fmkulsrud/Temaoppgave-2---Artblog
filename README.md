@@ -1,4 +1,4 @@
-## Erik
+## Temaoppgave 2
 # Fred
 
-gfdgdfg
+Her er lenke til mitt prosjekt {Artsy}(https://clever-aryabhata-a10e9a.netlify.app/)
