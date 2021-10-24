@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 header {
     display: flex;
-    background-color: #000;
+    background-color: black;
     color: #FFFF;
     padding: 30px 20px 30px 20px;
     align-items: center;
@@ -40,7 +40,7 @@ p {
 
 
 body {
-    background-color:#000;
+    background-color: black;
     color: white;
 }
 
@@ -93,7 +93,7 @@ main {
 .circle1 {
     height: 58px;
     width: 58px;
-    background-color:black;
+    background-color: black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -199,7 +199,7 @@ header nav ul {
 
 .button:hover {
     background-color:#D4AF37;
-    color: white;
+    color: black;
     font-weight: bold;
 }
             
