@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 header {
     display: flex;
-    background-color: black;
+    background-color: #101112;
     color: #FFFF;
     padding: 30px 20px 30px 20px;
     align-items: center;
@@ -20,27 +20,31 @@ h1 {
 }
 
 h2 {
+    font-family:'Open Sans', sans-serif;
     font-size: 35px;
-    text-align: 30%;
+    line-height: 27px;
     margin-top: 50px;
-    line-height: 52.5px;
+    font-weight: 200;
 }
+
 
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 27px;
+    line-height: 30px;
+    font-weight: 200;
 }
 
 @media screen and (max-width: 480px) {
      p {
         padding: 10px;
+        line-height: 2rem;
      }
 }
 
 
 body {
-    background-color: black;
+    background-color: #101112;
     color: white;
 }
 
@@ -186,21 +190,24 @@ header nav ul {
 }
 
 .button {
-    background-color:#f6f6f6;
-    border-width: 0px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    border-width: 1.5px;
     padding: 10px 32px;
-    border-radius: 15px;
+    border-radius: 8px;
     text-align: center;
     font-family: 'open sans', sans-serif;
     font-size: 20px;
-    color: #000000;
+    color: white;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color:#D4AF37;
+    background-color:#C7AE69;
     color: black;
     font-weight: bold;
+    border-color: #C7AE69;
 }
             
 
@@ -212,9 +219,22 @@ header nav ul {
     flex-flow: row nowrap;
     gap: 20px;
 }
+
 @media screen and (max-width: 480px) {
     .card {
         margin: 50px auto; 
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .card {
+        flex-flow: column-reverse;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .card {
+        flex-flow: row nowrap;
     }
 }
 
@@ -249,6 +269,13 @@ header nav ul {
     }
 }
 
+@media screen and (min-width: 481px) {
+    .card-content {
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+}
+
 .image-responsive {
     width: 100%;
     max-width: 1300px;
@@ -272,13 +299,14 @@ header nav ul {
         flex-flow: column-reverse wrap;
     }
 }
+    
 
 footer {
     display: block;
     width: 100%;
     height: 200px;
     color: white;
-    background-color: #000000;
+    background-color: #101112;
 }
 
 .footer-container {
@@ -381,14 +409,7 @@ footer nav ul li {
     background-color: #f6f6f6;
     margin: 0 0 0 auto;
     max-width: 1300px;
-    width: 100%;
     transform: translateY(-40px);
-}
-
-@media screen and (max-width: 1000px){
-    .mainarticle {
-        max-width: fit-content;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -396,6 +417,20 @@ footer nav ul li {
         max-width: fit-content;
     }
 }
+
+@media screen and (min-width: 481px) {
+    .mainarticle {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .mainarticle {
+        max-width: 1700px;
+    }
+}
+
+
 
 .header1-darkmode {
     color: black;
@@ -418,20 +453,31 @@ footer nav ul li {
     font-size: 20px;
     color: black;
     text-align: left;
-    padding: 0 380px;
     cursor: pointer;
+    margin: 0 0 0 500px;
+    padding: 5px;
     
 }
 
-@media screen and (max-width: 1100px){
-    .art-info {
-        padding: 0 120px;
-    }
-}
 
 @media screen and (max-width: 480px){
     .art-info {
         padding: 0 30px 0 30px;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .art-info {
+        margin: 0 320px 0 320px;
+        padding: 0 30px 0 30px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .art-info {
+        margin: 0 0 0 500px;
+        padding: 5px;
     }
 }
 
@@ -444,26 +490,40 @@ footer nav ul li {
     padding: 0 380px 0 380px;
 }
 
-
-@media screen and (max-width: 1000px) {
-    .blogstyle-text-light {
-        padding: 0 120px;
-    }
-}
-
-
 @media screen and (max-width: 480px) {
     .blogstyle-text-light {
         padding: 0 30px 0 30px;
     }
 }
 
+@media screen and (min-width: 769px) {
+    .blogstyle-text-light {
+        padding: 5px;
+        margin: 0 100px 0 100px;
+        max-width: 60ch;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .blogstyle-text-light {
+        margin: auto;
+        padding: 5px;
+        max-width: 60ch;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .blogstyle-text-light {
+        margin: auto;
+    }
+}
+
 
 .blog-card {
+    display: flex;
     width: 100%;
     margin: 50px auto;
     max-width: 800px;
-    display: flex;
     flex-flow: row nowrap;
     gap: 20px;
 }
@@ -471,17 +531,31 @@ footer nav ul li {
 
 .blog-card img {
     margin-bottom: 20px;
+    
 }
-
 
 @media  screen and (max-width: 480px) {
     .blog-card {
+        flex-flow: column-reverse;
         margin: 20px auto;
         width: 100%;
         max-width: 400px;
         height: auto;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .blog-card {
         flex-flow: column-reverse;
         padding: 20px;
+        margin: 20px auto;
+    }
+}
+
+@media screen and (min-width: 1290px) {
+    .blog-card {
+        flex-flow: row nowrap;
     }
 }
 
@@ -496,6 +570,18 @@ footer nav ul li {
     .image-responsive {
         max-width: 414px;
         height: 300px
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .image-responsive {
+        max-width: fit-content;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .image-responsive {
+        max-width: 100%;
     }
 }
 
